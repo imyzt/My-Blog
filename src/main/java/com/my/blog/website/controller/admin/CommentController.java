@@ -2,9 +2,9 @@ package com.my.blog.website.controller.admin;
 
 import com.github.pagehelper.PageInfo;
 import com.my.blog.website.controller.BaseController;
-import com.my.blog.website.model.Bo.RestResponseBo;
-import com.my.blog.website.model.Vo.CommentVo;
-import com.my.blog.website.model.Vo.UserVo;
+import com.my.blog.website.model.bo.RestResponseBo;
+import com.my.blog.website.model.vo.CommentVo;
+import com.my.blog.website.model.vo.UserVo;
 import com.my.blog.website.service.ICommentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,7 @@
 package com.my.blog.website.service;
 
 import com.baomidou.mybatisplus.service.IService;
-import com.my.blog.website.model.Vo.OptionVo;
+import com.my.blog.website.model.vo.OptionVo;
 
 import java.util.List;
 import java.util.Map;

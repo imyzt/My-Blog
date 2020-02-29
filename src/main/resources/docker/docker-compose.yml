@@ -1,0 +1,13 @@
+version: '3'
+networks:
+  myblog:
+services:
+  myblog:
+    image: imyzt/myblog:latest
+    networks:
+      - myblog
+    restart: always
+    volumes:
+      - /var/log/myblog/:/logs
+    ports:
+      - "9000:8080"

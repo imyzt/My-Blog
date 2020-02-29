@@ -1,7 +1,7 @@
 package com.my.blog.website.runner;
 
 import com.my.blog.website.constant.WebConst;
-import com.my.blog.website.model.Vo.OptionVo;
+import com.my.blog.website.model.vo.OptionVo;
 import com.my.blog.website.service.IOptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -29,7 +29,7 @@ public class InitSystemRunner implements CommandLineRunner{
 
     /**
      * 初始化系统配置信息
-     * @see WebConst.initConfig
+     * @see WebConst#initConfig
      */
     private void initSite() {
         List<OptionVo> options = optionService.getOptions();

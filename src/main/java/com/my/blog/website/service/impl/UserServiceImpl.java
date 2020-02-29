@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.my.blog.website.dao.UserVoMapper;
 import com.my.blog.website.exception.TipException;
-import com.my.blog.website.model.Vo.UserVo;
+import com.my.blog.website.model.vo.UserVo;
 import com.my.blog.website.service.IUserService;
 import com.my.blog.website.utils.DateKit;
 import com.my.blog.website.utils.TaleUtils;
@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.util.Date;
 import java.util.List;
 
 /**

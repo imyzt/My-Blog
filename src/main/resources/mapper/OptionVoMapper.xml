@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.my.blog.website.dao.OptionVoMapper">
-  <resultMap id="BaseResultMap" type="com.my.blog.website.model.Vo.OptionVo">
+  <resultMap id="BaseResultMap" type="com.my.blog.website.model.vo.OptionVo">
     <id column="name" jdbcType="VARCHAR" property="name" />
     <result column="value" jdbcType="VARCHAR" property="value" />
     <result column="description" jdbcType="VARCHAR" property="description" />
   </resultMap>
 
   <!--批量保存-->
-  <insert id="insertOptions" parameterType="com.my.blog.website.model.Vo.OptionVo" >
+  <insert id="insertOptions" parameterType="com.my.blog.website.model.vo.OptionVo" >
     INSERT INTO t_options(name, value, description) VALUES
     <if test="list.size!=0">
       <foreach collection="list" item="option"   separator="," >

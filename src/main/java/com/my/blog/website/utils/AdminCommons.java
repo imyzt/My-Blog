@@ -1,7 +1,7 @@
 package com.my.blog.website.utils;
 
 
-import com.my.blog.website.model.Vo.MetaVo;
+import com.my.blog.website.model.vo.MetaVo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 

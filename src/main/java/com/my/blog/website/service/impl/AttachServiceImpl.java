@@ -6,7 +6,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.my.blog.website.dao.AttachVoMapper;
 import com.my.blog.website.utils.DateKit;
-import com.my.blog.website.model.Vo.AttachVo;
+import com.my.blog.website.model.vo.AttachVo;
 import com.my.blog.website.service.IAttachService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

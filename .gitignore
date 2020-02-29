@@ -27,3 +27,5 @@ logs
 upload
 target
 tale.sql
+
+src/main/resources/application-prod.yml

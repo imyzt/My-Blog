@@ -3,7 +3,7 @@ package com.my.blog.website.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.my.blog.website.dao.OptionVoMapper;
-import com.my.blog.website.model.Vo.OptionVo;
+import com.my.blog.website.model.vo.OptionVo;
 import com.my.blog.website.service.IOptionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

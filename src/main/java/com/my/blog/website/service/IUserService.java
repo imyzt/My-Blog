@@ -1,7 +1,7 @@
 package com.my.blog.website.service;
 
 import com.baomidou.mybatisplus.service.IService;
-import com.my.blog.website.model.Vo.UserVo;
+import com.my.blog.website.model.vo.UserVo;
 
 /**
  * Created by BlueT on 2017/3/3.

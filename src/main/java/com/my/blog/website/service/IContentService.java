@@ -2,8 +2,8 @@ package com.my.blog.website.service;
 
 import com.baomidou.mybatisplus.service.IService;
 import com.github.pagehelper.PageInfo;
-import com.my.blog.website.dto.Types;
-import com.my.blog.website.model.Vo.ContentVo;
+import com.my.blog.website.model.dto.Types;
+import com.my.blog.website.model.vo.ContentVo;
 
 /**
  * Created by Administrator on 2017/3/13 013.

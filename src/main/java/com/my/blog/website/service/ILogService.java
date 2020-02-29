@@ -1,7 +1,7 @@
 package com.my.blog.website.service;
 
 import com.baomidou.mybatisplus.service.IService;
-import com.my.blog.website.model.Vo.LogVo;
+import com.my.blog.website.model.vo.LogVo;
 
 import java.util.List;
 

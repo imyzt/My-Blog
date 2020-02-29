@@ -1,10 +1,10 @@
 package com.my.blog.website.controller.admin;
 
 import com.my.blog.website.controller.BaseController;
-import com.my.blog.website.model.Bo.RestResponseBo;
+import com.my.blog.website.model.bo.RestResponseBo;
 import com.my.blog.website.service.IMetaService;
-import com.my.blog.website.dto.Types;
-import com.my.blog.website.model.Vo.MetaVo;
+import com.my.blog.website.model.dto.Types;
+import com.my.blog.website.model.vo.MetaVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

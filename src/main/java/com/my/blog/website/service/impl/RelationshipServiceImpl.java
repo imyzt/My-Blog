@@ -2,7 +2,7 @@ package com.my.blog.website.service.impl;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.my.blog.website.model.Vo.RelationshipVoKey;
+import com.my.blog.website.model.vo.RelationshipVoKey;
 import com.my.blog.website.service.IRelationshipService;
 import com.my.blog.website.dao.RelationshipVoMapper;
 import org.slf4j.Logger;

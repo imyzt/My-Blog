@@ -7,7 +7,7 @@ import com.my.blog.website.dao.LogVoMapper;
 import com.my.blog.website.service.ILogService;
 import com.my.blog.website.utils.DateKit;
 import com.my.blog.website.constant.WebConst;
-import com.my.blog.website.model.Vo.LogVo;
+import com.my.blog.website.model.vo.LogVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

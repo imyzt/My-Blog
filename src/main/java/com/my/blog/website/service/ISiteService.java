@@ -1,11 +1,11 @@
 package com.my.blog.website.service;
 
-import com.my.blog.website.dto.MetaDto;
-import com.my.blog.website.model.Bo.ArchiveBo;
-import com.my.blog.website.model.Bo.BackResponseBo;
-import com.my.blog.website.model.Bo.StatisticsBo;
-import com.my.blog.website.model.Vo.CommentVo;
-import com.my.blog.website.model.Vo.ContentVo;
+import com.my.blog.website.model.dto.MetaDto;
+import com.my.blog.website.model.bo.ArchiveBo;
+import com.my.blog.website.model.bo.BackResponseBo;
+import com.my.blog.website.model.bo.StatisticsBo;
+import com.my.blog.website.model.vo.CommentVo;
+import com.my.blog.website.model.vo.ContentVo;
 
 import java.util.List;
 

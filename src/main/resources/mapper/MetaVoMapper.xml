@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.my.blog.website.dao.MetaVoMapper">
-  <resultMap id="BaseResultMap" type="com.my.blog.website.model.Vo.MetaVo">
+  <resultMap id="BaseResultMap" type="com.my.blog.website.model.vo.MetaVo">
     <id column="mid" jdbcType="INTEGER" property="mid" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="slug" jdbcType="VARCHAR" property="slug" />
@@ -11,7 +11,7 @@
     <result column="parent" jdbcType="INTEGER" property="parent" />
   </resultMap>
 
-  <resultMap id="MetaDto" type="com.my.blog.website.dto.MetaDto" extends="BaseResultMap">
+  <resultMap id="MetaDto" type="com.my.blog.website.model.dto.MetaDto" extends="BaseResultMap">
     <result column="count" property="count" jdbcType="INTEGER"/>
   </resultMap>
 

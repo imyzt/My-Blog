@@ -45,9 +45,9 @@
                                           rel="nofollow">My Blog</a> 保留一切权利
                         </p>
                         <br/>
-                        <th:block th:if="${option}!=null and ${option.getValue()}!=''">
-                            <p th:text="${option.getValue()}"></p>
-                        </th:block>
+                        <p>
+                            <a href="http://www.beian.miit.gov.cn" th:text="${commons.site_option('site_record')}"></a>
+                        </p>
                     </div>
                 </div>
             </div>

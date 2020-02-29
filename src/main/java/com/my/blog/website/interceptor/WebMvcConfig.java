@@ -2,6 +2,7 @@ package com.my.blog.website.interceptor;
 
 
 import com.my.blog.website.utils.TaleUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -14,15 +15,13 @@ import javax.annotation.Resource;
  * Created by BlueT on 2017/3/9.
  */
 @Component
+@Slf4j
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
     @Resource
     private BaseInterceptor baseInterceptor;
-    @Resource
-    private VisitStatisticsInterceptor visitStatisticsInterceptor;
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(baseInterceptor);
-        registry.addInterceptor(visitStatisticsInterceptor);
     }
 
     /**
@@ -31,7 +30,9 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/upload/**").addResourceLocations("file:"+ TaleUtils.getUploadFilePath()+"upload/");
+        String path = "/upload/";
+        log.error("开放文件目录位置={}", path);
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:"+ path);
         super.addResourceHandlers(registry);
     }
 }

@@ -2,14 +2,13 @@ package com.my.blog.website.controller.admin;
 
 import com.my.blog.website.constant.WebConst;
 import com.my.blog.website.controller.BaseController;
-import com.my.blog.website.dto.LogActions;
+import com.my.blog.website.model.dto.LogActions;
 import com.my.blog.website.exception.TipException;
-import com.my.blog.website.model.Bo.RestResponseBo;
-import com.my.blog.website.model.Vo.UserVo;
+import com.my.blog.website.model.bo.RestResponseBo;
+import com.my.blog.website.model.vo.UserVo;
 import com.my.blog.website.service.ILogService;
 import com.my.blog.website.service.IUserService;
 import com.my.blog.website.utils.TaleUtils;
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -81,12 +81,9 @@ public class AuthController extends BaseController {
 
     /**
      * 注销
-     *
-     * @param session
-     * @param response
      */
     @RequestMapping("/logout")
-    public void logout(HttpSession session, HttpServletResponse response, HttpServletRequest request) {
+    public void logout(HttpSession session, HttpServletResponse response) {
         session.removeAttribute(WebConst.LOGIN_SESSION_KEY);
         Cookie cookie = new Cookie(WebConst.USER_IN_COOKIE, "");
         cookie.setValue(null);

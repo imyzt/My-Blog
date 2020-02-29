@@ -2,7 +2,7 @@ package com.my.blog.website.service;
 
 import com.baomidou.mybatisplus.service.IService;
 import com.github.pagehelper.PageInfo;
-import com.my.blog.website.model.Vo.AttachVo;
+import com.my.blog.website.model.vo.AttachVo;
 
 /**
  * Created by wangq on 2017/3/20.
